@@ -1,0 +1,27 @@
+* {
+  font-weight: 700;
+}
+.home {
+  width: 275px;
+  height: 100px;
+  border-radius: 6px;
+  background-color: #121212;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.7rem;
+  padding: 4px 22px;
+}
+.home i {
+  margin-right: 1.3rem;
+  font-size: 1.2rem;
+}
+.home #search {
+  font-size: 1.35rem;
+}
+.home .row {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}

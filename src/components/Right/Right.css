@@ -1,0 +1,233 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .angle {
+  display: flex;
+  gap: 0.8rem;
+}
+header .angle div i {
+  /* margin-right: 1.4rem; */
+  font-size: 1.3rem;
+
+  text-align: center;
+}
+header .angle div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: black;
+  font-weight: normal;
+  border-radius: 50%;
+  height: 22.5px;
+  width: 22.5px;
+  padding: 0.3rem;
+  /* text-align: center; */
+}
+.options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+#ep {
+  background-color: white;
+  color: black;
+  padding: 0.3rem 1.01rem;
+  border-radius: 19px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+.hamburger {
+  /* backgroundColor: "transparent",
+              cursor: "pointer",
+              position: "absolute",
+              right: "43px", */
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  visibility: hidden;
+  right: -430px;
+}
+.right {
+  flex: 1;
+  height: 80vh;
+  overflow-y: auto;
+  border-radius: 6px;
+  margin: 5px;
+  padding: 19px 22px;
+  overflow-x: hidden;
+  background: linear-gradient(to bottom, #1f1f1f, #121212);
+  width: 100%;
+  /* flex: "1",
+  height: "80vh",
+  overflowY: "auto",
+  borderRadius: "6px",
+  margin: "5px",
+  width: "100%",
+  padding: "19px 22px",
+  overflowX: "hidden",
+  background: "linear-gradient(to bottom,#1F1F1F,#121212)", */
+}
+.right2 {
+  display: none;
+}
+@media (max-width: 900px) {
+  .right {
+    justify-content: center;
+  }
+  .hamburger {
+    visibility: visible;
+    right: 43px;
+    background-color: transparent;
+  }
+}
+#ia {
+  background-color: black;
+  color: white;
+  padding: 0.3rem 1.01rem;
+  border-radius: 19px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+#noti {
+  background-color: black;
+  color: white;
+  padding: 0.6rem 1.01rem;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+#person {
+  background-color: black;
+  color: white;
+  /* color: rgb(192, 185, 185); */
+
+  padding: 0.6rem 1.01rem;
+  border-radius: 50%;
+  /* width: 1.2rem;
+  height: 1.2rem; */
+  /* width: 8px; */
+  /* text-align: center; */
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+@media (max-width: 1024px) {
+  #ep {
+    display: none;
+  }
+}
+.imgcontainer {
+  height: 170px;
+  width: 150px;
+}
+.recent-div {
+  width: 160px;
+  display: flex;
+  border-radius: 8.5px;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 1.2rem;
+  height: 250px;
+  padding: 0.8rem;
+  background-color: #181818;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.card {
+  width: 160px;
+  display: flex;
+  border-radius: 8.5px;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 1.2rem;
+  height: 250px;
+  padding: 0.8rem;
+  background-color: #181818;
+  cursor: pointer;
+}
+.made-for {
+  /* align-items: center; */
+  /* width: 160px;
+  display: flex;
+  border-radius: 8.5px;
+  flex-direction: column;
+  margin-left: 1.2rem;
+  background-color: red;
+  height: 250px;
+  padding: 0.8rem;
+  background-color: #181818;
+  cursor: pointer; */
+  /* flex-wrap: wrap; */
+}
+.recent-div:hover {
+  background-color: #1c1c1d;
+}
+.card:hover {
+  background-color: #1c1c1d;
+}
+.imgcontainer img {
+  height: 100%;
+  width: 100%;
+}
+.made-for:hover {
+  background-color: #1c1c1d;
+}
+.imgcontainer img {
+  height: 100%;
+  width: 100%;
+}
+#mfu:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+#pa:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.made-for .contents {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* flex-direction: column; */
+}
+.made-for .contents p {
+  margin: 0;
+  position: relative;
+  bottom: 12px;
+}
+#charts:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.charts-div {
+  display: flex;
+  gap: 2.8rem;
+  flex-wrap: wrap;
+  margin-left: 27px;
+}
+.card {
+  padding: 0.7rem 1.2rem;
+  border-radius: 7px;
+  width: 160px;
+  transition: 0.8s;
+}
+.card:hover {
+  background-color: #1c1c1d;
+  cursor: pointer;
+}
+.card-container {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}

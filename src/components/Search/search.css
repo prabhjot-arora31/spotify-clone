@@ -1,0 +1,252 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .angle {
+  display: flex;
+  gap: 0.8rem;
+}
+header .angle div i {
+  /* margin-right: 1.4rem; */
+  font-size: 1.3rem;
+
+  text-align: center;
+}
+header .angle div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  padding: 0.5rem;
+  background-color: black;
+  font-weight: normal;
+  border-radius: 50%;
+  height: 22.5px;
+  width: 22.5px;
+  padding: 0.3rem;
+  /* text-align: center; */
+}
+.options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+#ep {
+  background-color: white;
+  color: black;
+  padding: 0.3rem 1.01rem;
+  border-radius: 19px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+#ia {
+  background-color: black;
+  color: white;
+  padding: 0.3rem 1.01rem;
+  border-radius: 19px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+#noti {
+  background-color: black;
+  color: white;
+  padding: 0.6rem 1.01rem;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+#person {
+  background-color: black;
+  color: white;
+  /* color: rgb(192, 185, 185); */
+
+  padding: 0.6rem 1.01rem;
+  border-radius: 50%;
+  /* width: 1.2rem;
+    height: 1.2rem; */
+  /* width: 8px; */
+  /* text-align: center; */
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+@media (max-width: 1024px) {
+  #ep {
+    display: none;
+  }
+}
+.imgcontainer {
+  height: 170px;
+  width: 150px;
+}
+.recent-div {
+  width: 160px;
+  display: flex;
+  border-radius: 8.5px;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 1.2rem;
+  height: 250px;
+  padding: 0.8rem;
+  background-color: #181818;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.card {
+  width: 160px;
+  display: flex;
+  border-radius: 8.5px;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 1.2rem;
+  height: 250px;
+  padding: 0.8rem;
+  background-color: #181818;
+  cursor: pointer;
+}
+.made-for {
+  /* align-items: center; */
+  /* width: 160px;
+    display: flex;
+    border-radius: 8.5px;
+    flex-direction: column;
+    margin-left: 1.2rem;
+    background-color: red;
+    height: 250px;
+    padding: 0.8rem;
+    background-color: #181818;
+    cursor: pointer; */
+  /* flex-wrap: wrap; */
+}
+.recent-div:hover {
+  background-color: #1c1c1d;
+}
+.card:hover {
+  background-color: #1c1c1d;
+}
+.imgcontainer img {
+  height: 100%;
+  width: 100%;
+}
+.made-for:hover {
+  background-color: #1c1c1d;
+}
+.imgcontainer img {
+  height: 100%;
+  width: 100%;
+}
+#mfu:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+#pa:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.made-for .contents {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* flex-direction: column; */
+}
+.made-for .contents p {
+  margin: 0;
+  position: relative;
+  bottom: 12px;
+}
+#charts:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.charts-div {
+  display: flex;
+  gap: 2.8rem;
+  flex-wrap: wrap;
+  margin-left: 27px;
+}
+.card {
+  padding: 0.7rem 1.2rem;
+  border-radius: 7px;
+  width: 160px;
+  transition: 0.8s;
+}
+.card:hover {
+  background-color: #1c1c1d;
+  cursor: pointer;
+}
+.card-container {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+.search-bar {
+  position: absolute;
+  /* left: -250px; */
+  left: 465px;
+}
+.search-bar input {
+  padding: 0.85rem 2.5rem;
+  border-radius: 30px;
+  background-color: #242424;
+  /* color: #; */
+  color: white;
+  font-size: 0.85rem;
+  padding-right: 4.5rem;
+  border: none;
+}
+.search-bar:hover {
+  border: 1px solid;
+  border-radius: 30px;
+  border-color: grey;
+}
+.search-bar input::placeholder {
+  color: #757575;
+}
+.search-bar i {
+  position: absolute;
+  color: #757575;
+  left: 13px;
+  top: 14px;
+}
+@media (max-width: 1065px) {
+  .search-bar input {
+    padding-right: 3.4rem;
+  }
+}
+@media (max-width: 1033px) {
+  .search-bar input {
+    padding-right: 2.7rem;
+  }
+}
+@media (max-width: 1020px) {
+  .search-bar input {
+    padding-right: 1.2rem;
+  }
+}
+@media (max-width: 1000px) {
+  #angle-right {
+    display: none;
+  }
+  .search-bar input {
+    padding-right: 0.5rem;
+  }
+  .search-bar {
+    top: 19px;
+    left: 415px;
+  }
+  header {
+    flex-direction: column;
+    /* justify-content: left; */
+    /* justify-content: center; */
+    align-items: start;
+    gap: 2rem;
+  }
+}
