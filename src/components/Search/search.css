@@ -2,10 +2,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* position: fixed; */
 }
 header .angle {
   display: flex;
   gap: 0.8rem;
+  /* position: fixed; */
 }
 header .angle div i {
   /* margin-right: 1.4rem; */
@@ -191,6 +193,7 @@ header .angle div {
   position: absolute;
   /* left: -250px; */
   left: 465px;
+  z-index: 1;
 }
 .search-bar input {
   padding: 0.85rem 2.5rem;
@@ -226,6 +229,60 @@ header .angle div {
     padding-right: 2.7rem;
   }
 }
+.search {
+  /* flex: "1",
+  height: "80vh",
+  overflowY: "auto",
+  borderRadius: "6px",
+  margin: "5px",
+  width: "100%",
+  overflowX: "hidden",
+
+  padding: "19px 22px",
+  background: "linear-gradient(to bottom,#1F1F1F,#121212)", */
+  flex: 1;
+  height: 80vh;
+  overflow-y: auto;
+  border-radius: 6px;
+  margin: 5px;
+  width: 100%;
+  overflow-x: hidden;
+  padding: 19px 22px;
+  background: linear-gradient(to bottom, #1f1f1f, #121212);
+}
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.categories div {
+  width: 174.66px;
+  height: 174.66px;
+  border-radius: 8px;
+  padding-left: 17px;
+  padding-top: 17px;
+  /* padding: 0px 0px 174.663px; */
+  font-size: 24px;
+  /* color: ; */
+  position: relative;
+  overflow: hidden;
+}
+.categories div .imgcontainer {
+  width: 102.89px;
+  height: 102.89px;
+  transform: rotate(25deg) translate(63.5%, -2%);
+}
+.categories div .imgcontainer img {
+  width: 100%;
+  height: 100%;
+  /* transform: rotateY(20deg); */
+  position: absolute;
+}
+.search2 {
+  display: none;
+}
 @media (max-width: 1020px) {
   .search-bar input {
     padding-right: 1.2rem;
@@ -248,5 +305,29 @@ header .angle div {
     /* justify-content: center; */
     align-items: start;
     gap: 2rem;
+  }
+}
+.hamburger {
+  /* backgroundColor: "transparent",
+              cursor: "pointer",
+              position: "absolute",
+              right: "43px", */
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  visibility: hidden;
+  right: -430px;
+}
+@media (max-width: 900px) {
+  .search-bar {
+    left: 100px;
+  }
+  .hamburger {
+    visibility: visible;
+    font-weight: bold;
+    color: white;
+    right: 30px;
+    font-size: 20px;
+    background-color: transparent;
   }
 }

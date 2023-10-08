@@ -76,6 +76,7 @@ header .angle div {
 .right2 {
   display: none;
 }
+
 @media (max-width: 900px) {
   .right {
     justify-content: center;
@@ -85,6 +86,9 @@ header .angle div {
     right: 43px;
     background-color: transparent;
   }
+}
+.cross2 {
+  /* display: none; */
 }
 #ia {
   background-color: black;

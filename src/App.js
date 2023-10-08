@@ -62,6 +62,7 @@ function App() {
   // });
   const [hideLeft, sethideLeft] = useState("left");
   const [hideMain, sethideMain] = useState("right");
+  const [hideSearch, sethideSearch] = useState("search");
   const [cross, setcross] = useState("cross");
   return (
     <>
@@ -72,6 +73,7 @@ function App() {
           sethideMain={sethideMain}
           cross={cross}
           setcross={setcross}
+          sethideSearch={sethideSearch}
         />
         <Routes>
           <Route
@@ -86,7 +88,18 @@ function App() {
               />
             }
           />
-          <Route path="/search" element={<Search />} />
+          <Route
+            path="/search"
+            element={
+              // sethideLeft={sethideLeft}
+              <Search
+                hideSearch={hideSearch}
+                sethideSearch={sethideSearch}
+                sethideLeft={sethideLeft}
+                setcross={setcross}
+              />
+            }
+          />
           {/* <Right /> */}
         </Routes>
         <Bottom />

@@ -10,6 +10,7 @@ function Left(props) {
         sethideMain={props.sethideMain}
         cross={props.cross}
         setcross={props.setcross}
+        sethideSearch={props.sethideSearch}
       />
       <Bottom />
     </div>
